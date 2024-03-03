@@ -1,0 +1,131 @@
+.updateProfile-container {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(228, 226, 226); */
+}
+.updateProfile-box {
+  background-color: white;
+  width: 25vw;
+  height: 70vh;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.updateProfile-box > div > p {
+  color: #C38832;
+  /* background-color: rgba(0, 0, 0, 0.158); */
+  border-bottom: 2px solid #ca8928;
+  padding: 1vmax;
+  border-radius: 4px 4px 0 0;
+  text-align: center;
+  width: 100%;
+  font: 100 1.5vmax "Roboto";
+  transition: all 0.5s;
+}
+
+.update-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2vmax;
+  margin: auto;
+  height: 80%;
+  transition: all 0.5s;
+}
+
+.update-form > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.update-form > div > input {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font: 300 1vmax "cursive";
+  outline: none;
+}
+.update-form > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  color: rgba(0, 0, 0, 0.253);
+}
+
+#update-image > img {
+  width: 3vmax;
+  border-radius: 100%;
+}
+#update-image > input {
+  display: flex;
+  padding: 0%;
+}
+#update-image > input::file-selector-button {
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  height: 5vh;
+  border: none;
+  margin: 0;
+  font: 400 1vmax cursive;
+  transition: all 0.5s;
+  padding: 0 1vmax;
+  color: rgba(0, 0, 0, 0.603);
+  background-color: white;
+}
+#update-image > input::file-selector-button:hover {
+  background-color: rgb(243, 239, 239);
+}
+
+.update-form > button {
+  width: 100%;
+  padding: 0.8vmax;
+  background-color: #D3A055;
+  color: white;
+  font: 300 1.2vmax "Roboto";
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.479);
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 2vmax;
+}
+.update-form > button:hover {
+  background-color: #C38832;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .updateProfile-box {
+    width: 40vmax;
+    height: 60vmax;
+  }
+  .updateProfile-box > div > p {
+    font-size: 2vmax;
+    font-weight: 500;
+  }
+  .update-form > div > input {
+    padding: 3vmax 6vmax;
+    padding-right: 1vmax;
+    font-size: 2vmax;
+    font-weight: 800;
+  }
+  .update-form > button {
+    padding: 2vmax;
+    font-size: 2vmax;
+    font-weight: 500;
+  }
+  #update-image > img {
+    width: 5vmax;
+  }
+  #update-image > input::file-selector-button {
+    font-size: 2.2vmax;
+    font-weight: 500;
+  }
+}

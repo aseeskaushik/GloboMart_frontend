@@ -1,0 +1,149 @@
+.about-container {
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 2vmax;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 2vmax;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 2vmax;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image > a > img,
+.right-section > div > div > img {
+  width: 10vmax;
+  height: 10vmax;
+  border-radius: 50%;
+  margin-right: 2vmax;
+  transition: all 0.2s;
+}
+
+.profile-image > a > img:hover {
+  transform: scale(1.1);
+}
+
+.header-text {
+  text-align: left;
+}
+
+.about-heading {
+  color: black;
+  font-size: 2vmax;
+  margin: 0;
+}
+
+.about-subheading {
+  color: rgba(0, 0, 0, 0.9);
+  margin-top: 0.5vmax;
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  padding: 2vmax;
+  background: black;
+  color: white;
+  border-radius: 2vmax;
+  box-shadow: 0 0 4vmax rgba(0, 0, 0, 0.2);
+  margin: 1vmax;
+}
+
+.left-section h2,
+.right-section h2 {
+  border-bottom: 0.2vmax solid white;
+  padding-bottom: 1vmax;
+}
+
+.left-section p,
+.right-section p {
+  margin-top: 0.5vmax;
+  text-align: justify;
+}
+
+.team-member > div {
+  margin-top: 0.5vmax;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-member > div > p {
+  display: flex;
+  align-items: center;
+}
+
+.contact-section {
+  background: black;
+  color: white;
+  padding: 2vmax;
+  border-radius: 2vmax;
+  box-shadow: 0 0 4vmax white;
+  margin: 2vmax 0;
+}
+
+.contact-section h2 {
+  border-bottom: 0.2vmax solid white;
+  padding-bottom: 1vmax;
+}
+
+.contact-section > p {
+  margin-top: 0.5vmax;
+}
+
+.contact-section > ul {
+  margin-top: 0.5vmax;
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-section > ul > li {
+  margin-bottom: 1vmax;
+}
+
+.contact-section > ul > li > a {
+  color: #f1d580;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-section > ul > li > a:hover {
+  color: #ecc652;
+}
+.links-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.links-container a {
+  margin-right: 2vmax;
+  color: #f1d580;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.links-container a:hover {
+  color: #ecc652;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    margin: 1vmax 0;
+  }
+}

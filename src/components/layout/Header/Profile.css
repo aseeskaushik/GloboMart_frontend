@@ -1,0 +1,31 @@
+.speed-dial {
+  height: 3vmax;
+  width: 3vmax;
+  position: relative;
+}
+.speed-dial button {
+  height: 3vmax;
+  width: 3vmax;
+  z-index: 120;
+}
+.speedDialIcon {
+  width: 3.5vmax;
+  height: 3.5vmax;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .speed-dial {
+    height: 5vmax;
+    width: 5vmax;
+  }
+  .speed-dial button {
+    height: 3vmax;
+    width: 5vmax;
+  }
+  .speedDialIcon {
+    width: 7vmax;
+    height: 7vmax;
+    border-radius: 50%;
+  }
+}

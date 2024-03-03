@@ -1,0 +1,66 @@
+.mobile-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999 !important;
+  opacity: 0;
+  box-shadow: 0 1vmax 3vmax rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  transform: translateX(-100vw);
+}
+.mobile-menu-container {
+  width: 65vw;
+  height: 100vh;
+  padding: 1vmax;
+  background: linear-gradient(90deg, #c2c2c2 0%, #a9a9a9 100%);
+}
+.mobile-menu-container .logo > a {
+  padding-left: 1vmax;
+  display: flex;
+  align-items: center;
+  gap: 1vmax;
+  text-decoration: none;
+}
+.mobile-menu-container .logo > a > img {
+  width: 7vmax;
+  height: 7vmax;
+  border-radius: 50%;
+}
+.mobile-menu-container .logo > a > h3 {
+  font-size: 2.5vmax;
+  color: black;
+  font-weight: 500;
+}
+.mobile-menu.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.mobile-menu-container > h1 {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+.mobile-menu-container > ul {
+  padding: 3vmax;
+  padding-left: 8vmax;
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+  list-style: none;
+}
+.mobile-menu-container > ul > li > a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.06vmax;
+  position: relative;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 770px) {
+  .mobile-menu {
+    display: block;
+  }
+}

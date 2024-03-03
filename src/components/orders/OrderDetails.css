@@ -1,0 +1,91 @@
+
+.orderDetails-box {
+  padding: 5vmax;
+  padding-bottom: 0;
+}
+.orderDetails-box > h1 {
+  font: 400 2vmax "Roboto";
+  margin-bottom: 1vmax;
+}
+.orderDetails-box > p {
+  font: 400 1.7vmax "Roboto";
+}
+.orderDetails-box1 {
+  /* margin: 3vmax; */
+  margin-top: 0.6vmax;
+  margin-bottom: 2vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.6vmax;
+}
+.orderDetails-box1 > div {
+  display: flex;
+}
+.orderDetails-box1 > div > p {
+  font: 400 1.5vmax "Roboto";
+}
+.orderDetails-box1 > div > span {
+  color: rgba(0, 0, 0, 0.705);
+  font: 400 1.5vmax "Roboto";
+  margin-left: 0.5vmax;
+}
+.orderDetails-cart {
+  padding: 5vmax;
+  padding-top: 0;
+}
+.orderDetails-cart > p {
+  font: 400 1.7vmax "Roboto";
+}
+.orderDetails-cart > div {
+  padding: 1vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1vmax;
+}
+.orderDetails-cart > div > div {
+  display: flex;
+  align-items: center;
+  gap: 2vmax;
+}
+.orderDetails-cart > div > div > img {
+  width: 4vmax;
+}
+.orderDetails-cart > div > div > a {
+  font: 300 1.5vmax "Roboto";
+  color: rgba(0, 0, 0, 0.9);
+  text-decoration: none;
+}
+.orderDetails-cart > div > div > a:hover{
+  color: #935A24;
+}
+.orderDetails-cart > div > div > span {
+  margin-left: auto;
+  font: 300 1.5vmax "Roboto";
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 600px) {
+  .orderDetails-box > h1 {
+    font-size: 3vmax;
+  }
+  .orderDetails-box > p {
+    font-size: 2.5vmax;
+  }
+  .orderDetails-box1 > div > p {
+    font-size: 2vmax;
+  }
+  .orderDetails-box1 > div > span {
+    font-size: 2vmax;
+  }
+  .orderDetails-cart > p {
+    font-size: 2.5vmax;
+  }
+  .orderDetails-cart > div > div > a {
+    font-size: 2vmax;
+  }
+  .orderDetails-cart > div > div > span {
+    font-size: 2vmax;
+  }
+}

@@ -1,0 +1,79 @@
+.productCard {
+  width: 16vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  margin: 2vmax;
+  padding-bottom: 0.5vmax;
+  transition: all 0.5s;
+}
+.productCard > img {
+  width: 16vmax;
+  height: 20vmax;
+}
+.productCard > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1vmax 0.5vmax;
+}
+.productCard > div > div {
+  display: flex;
+  justify-content: flex-start;
+}
+.productCard > div > div > span {
+  margin: 0.8vmax 0.2vmax;
+  font: 300 0.9vmax "Roboto";
+}
+.productCard > div > p {
+  font-family: "Roboto";
+  font-size: 1.2vmax;
+}
+.productCard > div > span {
+  font: 500 1vmax "Roboto";
+}
+.productCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+  transform: translateY(-0.5vmax);
+}
+
+@media screen and (max-width: 600px) {
+  .productCard {
+    width: 100%;
+    flex-direction: row;
+    border-radius: 1vmax;
+    justify-content: flex-start;
+    gap: 1vmax;
+    height: 40vmax;
+    padding-bottom: 0;
+    margin: 1vmax;
+  }
+  .productCard > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1vmax 0.5vmax;
+  }
+  .productCard > img {
+    width: 60%;
+    height: 100%;
+    border-radius: 1vmax 0 0 1vmax;
+  }
+  .productCard > div > p {
+    font-size: 2.5vmax;
+  }
+  .productCard > div > div {
+    display: block;
+  }
+  .productCard > div > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1.5vmax "Roboto";
+  }
+  .productCard > div > span {
+    margin-top: 1vmax;
+    font-size: 2vmax;
+  }
+}

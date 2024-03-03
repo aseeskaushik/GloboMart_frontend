@@ -1,0 +1,80 @@
+.updateOrder {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  max-width: 100%;
+  padding: 4vmax;
+}
+.updateOrder-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+  padding: 2vmax;
+}
+.updateOrder-form > h1 {
+  font: 400 2vmax "Roboto";
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  transition: all 0.5s;
+}
+.updateOrder-form > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5vmax;
+}
+.updateOrder-form > div > svg {
+  font-size: 1.3vmax;
+  color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  transform: translateX(1vmax);
+}
+.updateOrder-form > div > select {
+  width: 100%;
+  padding: 0.8vmax 4vmax;
+  padding-right: 1vmax;
+  font: 200 1.3vmax "Roboto";
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  outline: none;
+  resize: none;
+}
+.updateOrder-form > button {
+  width: 100%;
+  padding: 0.7vmax;
+  background-color: #925924;
+  border: 1px solid #925924;
+  color: white;
+  font: 300 1.4vmax "Roboto";
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.updateOrder-form > button:hover {
+  background-color: #76481d;
+}
+.updateOrder-form > button:disabled {
+  border: none;
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 600px) {
+  .updateOrder {
+    height: 100%;
+    border: none !important;
+    align-items: flex-start;
+  }
+  .updateOrder-form > h1 {
+    font: 400 3vmax "Roboto";
+  }
+  .updateOrder-form > div > svg {
+    font-size: 2.5vmax;
+  }
+  .updateOrder-form > div > select {
+    padding: 2vmax 4vmax;
+    padding-right: 1vmax;
+    font: 200 2vmax "Roboto";
+  }
+  .updateOrder-form > button {
+    padding: 1vmax;
+    font: 300 2vmax "Roboto";
+  }
+}

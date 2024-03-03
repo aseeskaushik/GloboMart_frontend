@@ -1,0 +1,97 @@
+.profile-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  margin: 2vmax;
+}
+.profile-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+/* .profile-container > div:first-child > h1 {
+  color: rgba(0, 0, 0, 0.568);
+  font: 500 2.2vmax "Roboto";
+  transform: translateX(-5vmax);
+} */
+.profile-container > div:first-child > img {
+  width: 15vmax;
+  height: 15vmax;
+  border-radius: 100%;
+  transition: all 0.5s;
+}
+.profile-container > div:first-child > img:hover {
+  transform: scale(1.05);
+}
+.profile-container > div:first-child > a {
+  border: none;
+  background-color: #D3A055;
+  text-decoration: none;
+  margin-top: 2vmax;
+  font: 400 1.2vmax "Roboto";
+  color: white;
+  border-radius: 4px;
+  padding: 0.5vmax 2vmax;
+  transition: all 0.5s;
+}
+.profile-container >div:first-child >a:hover{
+    background-color: #C38832;
+}
+
+.profile-container >div:last-child{
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 1vmax;
+}
+.profile-container > div:last-child >div >h4{
+    color: black;
+    font: 400 1.2vmax "Roboto";
+}
+.profile-container > div:last-child >div >p{
+    color: rgb(0, 0, 0);
+    font: 300 1.6vmax "Roboto";
+    margin: 0.2vmax;
+    /* color: #f3be1f; */
+}
+.profile-container >div:last-child >div:last-child{
+    margin-top: 2vmax;
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+}
+.profile-container >div:last-child >div:last-child > a{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.849);
+    color: white;
+    text-decoration: none;
+    padding: 0.5vmax 3vmax;
+    text-align: center;
+    font: 400 1.2vmax "Roboto";
+    transition: all 0.5s;
+    border-radius: 2px;
+}
+.profile-container >div:last-child >div:last-child > a:hover{
+    background-color: black;
+}
+
+@media screen and (max-width:600px) {
+    /* .profile-container > div:first-child > h1{
+        font-size: 3vmax;
+    } */
+    .profile-container > div:first-child > a{
+        font-size: 1.8vmax;
+    }
+    .profile-container > div:last-child >div >h4{
+        font-size: 2vmax;
+    }
+    .profile-container > div:last-child >div >p{
+        font-size: 1.7vmax;
+    }
+    .profile-container >div:last-child >div:last-child > a{
+        font-size: 1.5vmax;
+        padding: 0.8vmax 2vmax;
+    }
+}

@@ -1,0 +1,122 @@
+.navbar {
+  background-image: linear-gradient(to right, #1a1a1a, #000000);
+  position: sticky;
+  top: 0;
+  padding: 0.7vmax 0;
+  z-index: 30;
+  backdrop-filter: blur(10vmax);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo > a {
+  padding-left: 0.5vmax;
+  display: flex;
+  align-items: center;
+  gap: 0.5vmax;
+  text-decoration: none;
+}
+.logo > a > img {
+  width: 4vmax;
+  height: 4vmax;
+  border-radius: 50%;
+}
+.logo > a > h3 {
+  font-size: 1.5vmax;
+  color: white;
+  font-weight: 300;
+}
+
+.navbar > ul {
+  display: flex;
+  align-items: center;
+  gap: 2vmax;
+  list-style: none;
+}
+.navbar > ul > li > a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.06vmax;
+  position: relative;
+}
+.navbar > ul > li > a::before {
+  content: "";
+  width: 0;
+  height: 0.2vmax;
+  background: linear-gradient(90deg, #c2c2c2 0%, #a9a9a9 100%);
+  border-radius: 1vmax;
+  bottom: -0.2vmax;
+  position: absolute;
+  transform: translateX(-0.5vmax);
+  transition: all 0.3s ease;
+}
+.navbar > ul > li > a:hover::before {
+  width: 100%;
+  transform: translateX(0);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 1vmax;
+}
+.search-bar > div {
+  padding: 0 1vmax;
+}
+
+.navbar .logo > button {
+  padding: 0.3vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 0.1vmax;
+  color: black;
+  background: linear-gradient(90deg, #c2c2c2 0%, #a9a9a9 100%);
+  cursor: pointer;
+  transition: all 0.5s ease;
+  display: none;
+}
+.navbar .logo > button > i {
+  font-size: 4vmax;
+}
+
+
+@media screen and (max-width: 770px) {
+  .navbar {
+    padding: 1vmax 0;
+    padding-bottom: 2vmax;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2vmax;
+  }
+  .navbar > ul {
+    display: none;
+  }
+  .navbar .logo > button {
+    display: flex;
+  }
+  .logo {
+    width: 100%;
+    padding: 0 1vmax;
+    padding-right: 2vmax;
+  }
+  .logo > a > img {
+    width: 6vmax;
+    height: 6vmax;
+  }
+  .logo > a > h3 {
+    font-size: 2.5vmax;
+  }
+  .search-bar {
+    padding: 0 1vmax;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

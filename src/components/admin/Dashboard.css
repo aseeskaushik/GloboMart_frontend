@@ -1,0 +1,90 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  min-height: 100vh;
+}
+.dashboard-container {
+  padding: 4vmax 2vmax;
+}
+.dashboard-container > h1 {
+  background-color: black;
+  font: 400 1.7vmax "Roboto";
+  color: white;
+  padding: 1vmax;
+  width: 15vmax;
+  text-align: center;
+  border-radius: 1vmax;
+  margin: auto;
+}
+.dashboard-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5vmax;
+}
+.dashboard-summary > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #9238CB;
+  border-radius: 1vmax;
+  padding: 1vmax;
+  width: 100%;
+}
+.dashboard-summary > div:first-child > p {
+  color: white;
+  text-align: center;
+}
+.dashboard-summary > div:last-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2vmax;
+  width: 100%;
+  padding: 0.5vmax;
+}
+.dashboard-summary > div:last-child > a {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #e4b65e;
+  border-radius: 100%;
+  padding: 1.5vmax;
+  height: 12vmax;
+  width: 12vmax;
+}
+.dashboard-summary > div:last-child > a > p {
+  font: 300 1.7vmax "Roboto";
+}
+.line-chart {
+  width: 80%;
+  margin: auto;
+}
+.doughnut-chart{
+  width: 30vmax;
+  margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-container > h1 {
+    font-size: 2.5vmax;
+  }
+  .dashboard-summary > div:last-child > a {
+    font-size: 2vmax;
+  }
+  .dashboard-summary > div:last-child > a > p {
+    font-size: 2.5vmax;
+  }
+  .line-chart {
+    width: 90%;
+    height: 50vmax;
+  }
+}

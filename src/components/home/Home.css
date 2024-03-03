@@ -1,0 +1,85 @@
+.banner {
+  /* background-image: linear-gradient(to right, #635dc0, #3027ae); */
+  /* background-image: url("../../images/background-1.jpg"); */
+  /* background: radial-gradient(circle,  red, #3027ae); */
+  background-size: cover;
+  height: 100vmin;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.banner h1 {
+  margin: 5vmax;
+  font: 600 2.5vmax "Roboto";
+}
+.banner p {
+  font: 300 1.4vmax "Lucida sans";
+}
+.banner a button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.473);
+  transition: all 0.5s;
+}
+.banner a button:hover {
+  transform: scale(1.1);
+}
+/* .banner::after {
+  content: "";
+  width: 100vw;
+  height: 112vmin;
+  background-color: white;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  max-width: 100%;
+} */
+/* .low-banner{
+  background-image: url("../../images/background-1.jpg");
+  background-size: cover;
+} */
+.home-heading {
+  font-family: Roboto;
+  font-size: 1.4vmax;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 20vmax;
+  text-align: center;
+  margin: 5vmax auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: auto;
+  justify-content: center;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .banner h1 {
+    font: 600 3.5vmax "Roboto";
+  }
+  .banner p {
+    font: 300 2.2vmax "Lucida sans";
+  }
+  .banner a button {
+    font: inherit;
+    font-size: 1.7vmax;
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
+  }
+  .home-heading {
+    font-size: 1.8vmax;
+  }
+  .container {
+    width: 97%;
+  }
+}

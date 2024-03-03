@@ -1,0 +1,89 @@
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: auto;
+  margin-left: 15vmax;
+  /* margin-right: 10vmax; */
+  /* justify-content: center; */
+  max-width: 100%;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.page-item {
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.278);
+  padding: 0.5vmax 1vmax;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.page-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.page-link {
+  text-decoration: none;
+  font: 300 1vmax "Roboto";
+  color: rgb(80, 80, 80);
+  transition: all 0.5s;
+}
+.page-item:hover {
+  background-color: rgb(233, 228, 228);
+}
+.pageItemActive {
+  background-color: #cc9b47;
+  border-left: none;
+  border-right: none;
+}
+.pageLinkActive {
+  color: white;
+}
+
+.filter-box {
+  width: 10vmax;
+  position: absolute;
+  top: 10vmax;
+  left: 4vmax;
+}
+.category-box {
+  padding: 0;
+}
+.category-link {
+  list-style: none;
+  font: 400 1.2vmax "Roboto";
+  color: rgba(0, 0, 0, 0.9);
+  margin: 0.4vmax;
+  cursor: pointer;
+  transition: all 0.5;
+}
+.category-link:hover {
+  color: #cc9b47;
+}
+.filter-box > fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.342);
+}
+
+@media screen and (max-width: 600px) {
+  .product-container {
+    margin: 0.5vmax;
+    width: 97%;
+  }
+  .filter-box {
+    width: 20vmax;
+    position: static;
+    margin: 1vmax auto;
+  }
+  .page-link {
+    font-size: 1.8vmax;
+  }
+  .category-link {
+    font-size: 1.8vmax;
+  }
+}

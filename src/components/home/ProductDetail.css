@@ -1,0 +1,210 @@
+.product-detail {
+  width: 100vw;
+  max-width: 100%;
+  padding: 2vmax;
+  display: flex;
+  flex-direction: row;
+  /* background-color: rgb(210, 218, 226); */
+}
+.left-column {
+  flex: 1;
+  width: 100%;
+  border: 1px solid #cc9b47;
+  text-align: center;
+  padding: 2vmax;
+}
+.right-column {
+  flex: 1;
+  width: 100%;
+  padding: 2vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  border: 1px solid #cc9b47;
+}
+.carousel-image {
+  width: 20vmax;
+  max-width: 80%;
+  height: 25vmax;
+}
+
+.detail-block-1 > h2 {
+  color: rgb(54, 54, 54);
+  font: 600 1.6vmax "Roboto";
+}
+.detail-block-1 > p {
+  color: rgb(54, 54, 54, 0.582);
+  font: 200 1vmax "cursive";
+}
+
+.detail-block-2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.detail-block-3 > h1 {
+  color: rgb(54, 54, 54);
+  font: 400 1.8vmax "Franklin Gothic Medium";
+  margin: 0.5vmax 0;
+}
+.detail-block-3-1 {
+  display: flex;
+  align-items: center;
+}
+.detail-block-3-1-1 > button {
+  border: none;
+  background-color: #d7b16f;
+  padding: 0.5vmax;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s;
+}
+.detail-block-3-1-1 > button:hover {
+  background-color: #cc9b47;
+}
+.detail-block-3-1-1 > span {
+  padding: 0.5vmax;
+  text-align: center;
+  font: 400 1vmax "Roboto";
+  background: white;
+  color: rgba(0, 0, 0, 0.9);
+}
+.detail-block-3-1 > button:last-child {
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  transition: all 0.5s;
+  color: white;
+  background-color: #d7b16f;
+  padding: 0.3vmax 1vmax;
+  margin: 1vmax;
+  border-radius: 5%;
+}
+.detail-block-3-1 > button:last-child:hover {
+  background-color: #cc9b47;
+}
+.detail-block-3-1 > button:last-child:disabled {
+  cursor: not-allowed;
+  background-color: grey;
+}
+
+.detail-block-4 {
+  font: 500 1.2vmax sans-serif;
+}
+.detail-block-4 > p {
+  color: rgb(94, 91, 91);
+  font: 300 1vmax sans-serif;
+  padding-top: 0.2vmax;
+}
+
+.submit-review {
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  transition: all 0.5s;
+  color: white;
+  background-color: #d7b16f;
+  padding: 0.3vmax 1vmax;
+  margin: 1vmax 0;
+  border-radius: 5%;
+  outline: none;
+}
+.submit-review:hover {
+  background-color: #cc9b47;
+}
+
+.submit-dialog {
+  display: flex;
+  flex-direction: column;
+}
+.sumbit-textArea {
+  border: 1px solid rgba(0, 0, 0, 0.582);
+  font: 300 1vmax "Roboto";
+  margin: 1vmax 0;
+  padding: 0.5vmax;
+}
+
+.reviews-heading {
+  color: rgb(53, 50, 50);
+  font: 500 2vmax "Roboto";
+  text-align: center;
+  border-bottom: 1px solid black;
+  width: 20vmax;
+  margin: auto;
+  padding-top: 1vmax;
+}
+.reviews {
+  display: flex;
+  overflow: auto;
+}
+.no-reviews {
+  font: 500 1.3vmax "Gill Sans";
+  margin-top: 2vmax;
+  text-align: center;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 600px) {
+  .product-detail {
+    flex-direction: column;
+    height: unset;
+  }
+  .product-detail > div {
+    align-items: center;
+  }
+  .carousel-image {
+    width: 80%;
+    height: 30vmax;
+  }
+  .detail-block-1 > h2 {
+    font-size: 2.8vmax;
+    text-align: center;
+  }
+  .detail-block-1 > p {
+    font-size: 1.8vmax;
+    text-align: center;
+  }
+  .detail-block-2 {
+    justify-content: center;
+  }
+  .detail-block-3 > h1 {
+    text-align: center;
+    font-size: 3vmax;
+  }
+  .detail-block-3-1 {
+    flex-direction: column;
+  }
+  .detail-block-3-1-1 > button {
+    padding: 1.5vmax;
+  }
+  .detail-block-3-1-1 > span {
+    padding: 1.5vmax;
+    font-size: 1.8vmax;
+  }
+  .detail-block-3-1 > button:last-child {
+    padding: 1vmax 2vmax;
+    margin: 3vmax 0;
+    font-size: 2.5vmax;
+  }
+  .detail-block-3 > p {
+    text-align: center;
+    font-size: 2.5vmax;
+  }
+  .detail-block-4 {
+    font-size: 2.5vmax;
+    margin-top: 1vmax;
+  }
+  .detail-block-4 > p {
+    font-size: 2.3vmax;
+  }
+  .submit-review {
+    font-size: 2.5vmax;
+    padding: 1vmax 2vmax;
+  }
+  .sumbit-textArea {
+    font: 300 2vmax "Roboto";
+  }
+}

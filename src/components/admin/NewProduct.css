@@ -1,0 +1,112 @@
+.newProduct-form {
+  width: 50%;
+  margin: 4vmax auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1vmax;
+  background-color: #f8e5b1;
+  padding: 2vmax;
+}
+.newProduct-form > h1 {
+  font: 400 1.7vmax "Roboto";
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  transition: all 0.5s;
+}
+.newProduct-form > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5vmax;
+}
+.newProduct-form > div > svg {
+  font-size: 1.4vmax;
+  color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  transform: translateX(1vmax);
+}
+.newProduct-form > div > input,
+.newProduct-form > div > textarea,
+.newProduct-form > div > select {
+  width: 100%;
+  padding: 0.8vmax 4vmax;
+  padding-right: 1vmax;
+  font: 200 1.2vmax "Roboto";
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  outline: none;
+  resize: none;
+}
+#newProduct-file > input {
+  width: 100%;
+  padding: 0;
+}
+#newProduct-file > input::file-selector-button {
+  cursor: pointer;
+  z-index: 2;
+  font: 400 1vmax cursive;
+  transition: all 0.5s;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0.8vmax 0;
+  width: 100%;
+  background-color: white;
+  border: none;
+}
+#newProduct-file > input::file-selector-button:hover {
+  background-color: rgb(243, 239, 239);
+}
+#newProduct-image {
+  display: flex;
+  overflow: auto;
+}
+#newProduct-image > img {
+  width: 4vmax;
+  height: 4vmax;
+  border-radius: 100%;
+}
+.newProduct-form > button {
+  width: 100%;
+  padding: 0.8vmax;
+  background-color: #794a1e;
+  border: 1px solid #794a1e;
+  color: white;
+  font: 300 1.4vmax "Roboto";
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.newProduct-form > button:hover {
+  background-color: #6a411a;
+}
+.newProduct-form > button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 600px) {
+  .newProduct-form{
+    width: 80%;
+  }
+  .newProduct-form > h1 {
+    font: 400 2.3vmax "Roboto";
+  }
+  .newProduct-form > div > svg {
+    font-size: 1.7vmax;
+  }
+  .newProduct-form > div > input,
+  .newProduct-form > div > textarea,
+  .newProduct-form > div > select {
+    padding: 1.3vmax 4vmax;
+    padding-right: 1vmax;
+    font: 200 1.7vmax "Roboto";
+  }
+  #newProduct-file > input::file-selector-button {
+    font: 400 1.7vmax cursive;
+    padding: 1.5vmax 0;
+  }
+  #newProduct-image > img {
+    width: 5vmax;
+    height: 5vmax;
+  }
+  .newProduct-form > button {
+    padding: 1.5vmax;
+    font: 300 1.7vmax "Roboto";
+  }
+}

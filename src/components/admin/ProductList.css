@@ -1,0 +1,52 @@
+.productList-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+  padding: 2vmax;
+}
+.productList-container > h1 {
+  background-color: black;
+  font: 400 1.7vmax "Roboto";
+  color: white;
+  padding: 1vmax;
+  width: 15vmax;
+  text-align: center;
+  border-radius: 1vmax;
+  margin: auto;
+}
+.productList-table {
+  border: none !important;
+}
+.productList-table > div {
+  font: 200 1.5vmax "Roboto";
+  color: rgba(0, 0, 0, 0.904);
+  border: none !important;
+}
+.productList-table a {
+  color: rgba(0, 0, 0, 0.897);
+  transition: all 0.5s;
+}
+.productList-table a:hover {
+  color: #885621;
+}
+.delete-button {
+  color: #293d57;
+}
+.delete-button:hover {
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .productList-container {
+    /* height: 60vh; */
+    padding: 0;
+    border-left: none;
+  }
+  .productList-container > h1 {
+    font: 400 3vmax "Roboto";
+  }
+  .productList-table > div {
+    font: 200 2vmax "Roboto";
+    color: rgba(0, 0, 0, 0.904);
+  }
+}

@@ -1,0 +1,26 @@
+.review-card {
+  flex: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.226);
+  border: 1px solid rgba(56, 56, 56, 0.116);
+  width: 30vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1vmax;
+  padding: 1vmax;
+}
+.review-card > img {
+  width: 5vmax;
+  height: 5vmax;
+  border-radius: 100%;
+}
+.review-card > span {
+  font: 300 1.4vmax "cursive";
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 600px) {
+  .review-card > span {
+    font-size: 1.8vmax;
+  }
+}

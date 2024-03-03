@@ -1,0 +1,71 @@
+.sidebar {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 3vmax 1vmax;
+  gap: 2vmax;
+}
+.sidebar > a > img {
+  width: 4vmax;
+  height: 4vmax;
+  border-radius: 100%;
+  transition: all 0.5s;
+}
+.sidebar > a > img:hover {
+  width: 5vmax;
+  height: 5vmax;
+}
+.sidebar > a:not(:first-child),
+.sidebar > div {
+  text-decoration: none;
+  font: 300 1.5vmax "Roboto";
+  /* color: rgba(0, 0, 0, 0.726); */
+  color: white;
+  padding: 1vmax;
+  transition: all 0.5s;
+}
+.sidebar > a:not(:first-child):hover,
+.sidebar > div:hover {
+  color: #a06728;
+  transform: scale(1.1);
+}
+.sidebar > a a,
+.sidebar > div a {
+  text-decoration: none;
+  font: 300 1.5vmax "Roboto";
+  /* color: rgba(0, 0, 0, 0.726); */
+  color: white;
+  transition: all 0.5s;
+}
+.sidebar > a a :hover,
+.sidebar > div a:hover {
+  color: #a06728;
+}
+.sidebar > a:not(:first-child) > p {
+  display: flex;
+  align-items: center;
+  gap: 0.5vmax;
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar > a > img {
+    width: 6vmax;
+    height: 6vmax;
+  }
+  .sidebar > a > img:hover {
+    width: 7vmax;
+    height: 7vmax;
+  }
+  .sidebar > a:not(:first-child),
+  .sidebar > div {
+    font: 300 2vmax "Roboto";
+  }
+  .sidebar > a:not(:first-child):hover,
+  .sidebar > div:hover {
+    transform: scale(1);
+  }
+  .sidebar > a a,
+  .sidebar > div a {
+    font: 300 2vmax "Roboto";
+  }
+}
