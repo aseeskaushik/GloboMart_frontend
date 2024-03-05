@@ -29,7 +29,7 @@ const NavBar = () => {
         <div className="logo">
           <Link to="/">
             <img src={logo} alt="logo" />
-            <h3>GenieBazaar</h3>
+            <h3>GloboMart</h3>
           </Link>
           <button onClick={toggleMenu}>
             {openMenu ? (

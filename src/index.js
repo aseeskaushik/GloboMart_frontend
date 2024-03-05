@@ -8,12 +8,12 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-import axios from 'axios'
+import axios from "axios";
 import "./index.css";
 import App from "./App";
 import { Provider } from "react-redux";
 import store from "./store/index";
-axios.defaults.baseURL = 'https://genie-bazaar-backend.vercel.app';
+axios.defaults.baseURL = "https://globo-mart-backend.vercel.app";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

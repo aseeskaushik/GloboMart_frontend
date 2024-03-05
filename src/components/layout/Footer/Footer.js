@@ -15,19 +15,19 @@ const Footer = () => {
         <div className="mid-footer">
           {/* <h1>Ecommerce</h1> */}
           <p>High quality is our first priority</p>
-          <p>Copyright 2023 @ Ritik Agarwal</p>
+          <p>Copyright 2023 @ Ashish Kaushik</p>
         </div>
         <div className="right-footer">
           <h4>Follow us</h4>
           <a
-            href="https://www.linkedin.com/in/ritik-agarwal-04986a257/"
+            href="https://www.linkedin.com/in/ashish-kaushik-b76a22257/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Linkedin
           </a>
           <a
-            href="https://github.com/ritikvr"
+            href="https://github.com/aseeskaushik"
             target="_blank"
             rel="noopener noreferrer"
           >

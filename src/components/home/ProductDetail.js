@@ -106,7 +106,7 @@ const ProductDetail = () => {
         </div>
       ) : (
         <Fragment>
-          <MetaData title={`${product.name} -- GenieBazaar`} />
+          <MetaData title={`${product.name} -- GloboMart`} />
           <div className="product-detail">
             <div className="left-column">
               <Carousel>

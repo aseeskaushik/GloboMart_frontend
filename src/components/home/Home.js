@@ -22,7 +22,7 @@ const Home = () => {
         <Loader />
       ) : (
         <Fragment>
-          <MetaData title="GenieBazaar" />
+          <MetaData title="GloboMart" />
           <div className="banner">
             <p>Welcome to Ecommerce</p>
             <h1>Find Amazing Products Below</h1>

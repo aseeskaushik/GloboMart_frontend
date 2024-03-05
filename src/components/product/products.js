@@ -93,7 +93,7 @@ const Products = () => {
 
   return (
     <Fragment>
-      <MetaData title="Products -- GenieBazaar" />
+      <MetaData title="Products -- GloboMart" />
       {!loading && products.length === 0 ? (
         <div className="empty-cart">
           <RemoveShoppingCartIcon />

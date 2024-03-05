@@ -1,5 +1,5 @@
 import "./About.css";
-import ownerImage from "../../images/Ritik.png";
+import ownerImage from "../../images/ashish.png";
 import logo from "../../images/logo.png";
 import { Link } from "react-router-dom";
 import { Fragment } from "react";
@@ -18,7 +18,7 @@ const About = () => {
             </div>
             <div className="header-text">
               <h1 className="about-heading">About Us</h1>
-              <p className="about-subheading">Welcome to GenieBazaar</p>
+              <p className="about-subheading">Welcome to GloboMart</p>
             </div>
           </div>
         </header>
@@ -27,7 +27,7 @@ const About = () => {
           <section className="left-section">
             <h2>Our Story</h2>
             <p>
-              Our values at GenieBazaar revolve around integrity, customer
+              Our values at GloboMart revolve around integrity, customer
               satisfaction, and sustainability. We believe in building lasting
               relationships, providing top-notch service, and contributing
               positively to the environment.
@@ -48,7 +48,7 @@ const About = () => {
               <div>
                 <img src={ownerImage} alt="Team Member" />
                 <p>
-                  <strong>Ritik Agarwal</strong> - Founder & CEO
+                  <strong>Ashish Kaushik</strong> - Founder
                 </p>
               </div>
               <p>
@@ -68,24 +68,24 @@ const About = () => {
           <ul>
             <li>
               <strong>Email:</strong>{" "}
-              <a href="https://mailto:ritik11oct2003@gmail.com">
-                ritik11oct2003@gmail.com
+              <a href="https://mailto:proakkaushik@gmail.com">
+                proakkaushik@gmail.com
               </a>
             </li>
             <li>
-              <strong>Phone:</strong> 7055995395
+              <strong>Phone:</strong> 7278302823
             </li>
           </ul>
           <div className="links-container">
             <a
-              href="https://linkedin.com/in/ritik-agarwal-04986a257"
+              href="https://www.linkedin.com/in/ashish-kaushik-b76a22257/"
               target="_blank"
               rel="noopener noreferrer"
             >
               Linkedin
             </a>
             <a
-              href="https://github.com/ritikvr"
+              href="https://github.com/aseeskaushik"
               target="_blank"
               rel="noopener noreferrer"
             >
