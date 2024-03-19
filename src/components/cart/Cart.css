@@ -9,7 +9,7 @@
 }
 .empty-cart > svg {
   font-size: 4vmax;
-  color: #CC9B47;
+  color: #67727D;
 }
 .empty-cart > p {
   font-size: 2vmax;
@@ -28,8 +28,9 @@
   /* background-color: #E6E6E6; */
   display: grid;
   grid-template-columns: 4fr 1fr 1fr;
-  color: #000000;
-  font: 300 1.5vmax "Roboto";
+  color: #415161;
+  /* font: 300 1.5vmax "Roboto"; */
+  font-size: 1.5vmax;
   padding: 1vmax;
   margin: auto;
 }
@@ -47,23 +48,26 @@
   height: 8vmax;
 }
 .cart-input > button {
-  border: none;
-  background-color: rgba(0, 0, 0, 0.849);
-  color: white;
+  border: 1px solid rgba(103, 114, 125,0.1);
+  /* background-color:rgba(103, 114, 125,0.1); */
+  /* color: white; */
+  color: #67727D;
   cursor: pointer;
   transition: all 0.5s;
   padding: 0.5vmax;
 }
 .cart-input > button:hover {
-  background-color: black;
+  background-color: rgba(103, 114, 125,0.1);
+  color: #415161;
 }
 .cart-input > input {
   border: none;
   padding: 0.5vmax;
   width: 2vmax;
   text-align: center;
-  font: 400 1vmax "Roboto";
-  color: rgba(0, 0, 0, 0.87);
+  /* font: 400 1vmax "Roboto"; */
+  font-size: 1vmax;
+  color: #67727D;
 }
 .cart-subtotal {
   display: flex;
@@ -71,8 +75,9 @@
   height: 8vmax;
   align-items: center;
   justify-content: flex-end;
-  font: 300 1.5vmax "cursive";
-  color: rgba(0, 0, 0, 0.884);
+  /* font: 300 1.5vmax "cursive"; */
+  font-size: 1.5vmax;
+  color: #67727D;
 }
 
 .cart-container-2 {
@@ -80,11 +85,13 @@
   grid-template-columns: 2fr 1.2fr;
 }
 .cart-total {
-  border-top: 2px solid #CC9B47;
+  border-top: 2px solid #67727D;
   margin: 1vmax 4vmax;
   margin-right: 0;
   padding: 1vmax;
-  font: 300 1.5vmax "Roboto";
+  /* font: 300 1.5vmax "Roboto"; */
+  font-size: 1.5vmax;
+  color: #415161;
   display: flex;
   justify-content: space-between;
 }
@@ -94,20 +101,24 @@
   align-items: center;
 }
 .checkout-button > button {
-  background-color: #CC9B47;
+  background-color: #67727D;
+  /* background-color: white; */
   padding: 0.8vmax 4vmax;
   width: 50%;
   margin-left: 5vmax;
-  font: 400 1.2vmax "Roboto";
+  /* font: 400 1.2vmax "Roboto"; */
+  font-size: 1.1vmax;
+  /* color: white; */
   color: white;
   text-align: center;
-  border: none;
+  border: 1px solid #415161;
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.5s;
 }
 .checkout-button > button:hover {
-  background-color: #AF8131;
+  background-color:#415161;
+  /* color: #415161; */
 }
 
 @media screen and (max-width: 600px) {

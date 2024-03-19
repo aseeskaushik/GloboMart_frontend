@@ -131,7 +131,7 @@ const ProductDetail = () => {
                   {...{
                     edit: false,
                     color: "rgba(20,20,20,0.2)",
-                    activeColor: "#CC9B47",
+                    activeColor: "#67727D",
                     size: window.innerWidth < 600 ? 25 : 20,
                     value: product.rating,
                     isHalf: true,
@@ -169,7 +169,7 @@ const ProductDetail = () => {
               </button>
             </div>
           </div>
-          <h3 className="reviews-heading">Reviews</h3>
+          <p className="reviews-heading">Reviews</p>
           <Dialog
             aria-labelledby="simple-dialog-title"
             open={open}

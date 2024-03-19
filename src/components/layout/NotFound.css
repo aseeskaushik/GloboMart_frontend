@@ -8,7 +8,7 @@
 }
 .not-found > a {
   padding: 0.5vmax 1vmax;
-  background-color: black;
+  background-color: #415161;
   text-decoration: none;
   color: white;
 }

@@ -14,16 +14,18 @@
   margin: 0.3vmax 1.5vmax;
 }
 .cartItem-card > div > a {
-  font: 400 1vmax cursive;
-  color: rgba(24, 24, 24, 0.836);
+  /* font: 400 1vmax cursive; */
+  font-size: 1.1vmax;
+  color: #415161;
   text-decoration: none;
 }
 .cartItem-card > div a:hover {
-  color: #CC9B47;
+  color: #67727D;
 }
 .cartItem-card > div > span {
-  color: rgba(24, 24, 24, 0.836);
-  font: 400 1vmax "Roboto";
+  color: #67727D;
+  /* font: 400 1vmax "Roboto"; */
+  font-size: 1vmax;
 }
 .cartItem-card > div > p {
   color: red;

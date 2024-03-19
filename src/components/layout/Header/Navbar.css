@@ -1,5 +1,6 @@
 .navbar {
-  background-image: linear-gradient(to right, #1a1a1a, #000000);
+  /* background-image: linear-gradient(to right, #1a1a1a, #000000); */
+  background-color: #ffffff;
   position: sticky;
   top: 0;
   padding: 0.7vmax 0;
@@ -29,7 +30,8 @@
 }
 .logo > a > h3 {
   font-size: 1.5vmax;
-  color: white;
+  /* color: white; */
+  color:#000000;
   font-weight: 300;
 }
 
@@ -38,10 +40,12 @@
   align-items: center;
   gap: 2vmax;
   list-style: none;
+  color: #415161;
 }
 .navbar > ul > li > a {
   text-decoration: none;
-  color: white;
+  /* color: white; */
+  color: #49516b;
   letter-spacing: 0.06vmax;
   position: relative;
 }
@@ -49,7 +53,7 @@
   content: "";
   width: 0;
   height: 0.2vmax;
-  background: linear-gradient(90deg, #c2c2c2 0%, #a9a9a9 100%);
+  background: linear-gradient(90deg, rgba(103, 114, 125,0.5) 0%, #67727D 100%);
   border-radius: 1vmax;
   bottom: -0.2vmax;
   position: absolute;
@@ -77,8 +81,8 @@
   justify-content: center;
   border: none;
   border-radius: 0.1vmax;
-  color: black;
-  background: linear-gradient(90deg, #c2c2c2 0%, #a9a9a9 100%);
+  color: #415161;
+  background: linear-gradient(90deg, #c2c2c2 0%, #67727D 100%);
   cursor: pointer;
   transition: all 0.5s ease;
   display: none;

@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Teko&display=swap');
 .productCard {
   width: 16vmax;
   display: flex;
   flex-direction: column;
   text-decoration: none;
   justify-content: space-between;
-  background-color: black;
-  color: white;
+  /* background-color: #415161; */
+  background-color: #FFFFFF;
+  /* color: white; */
+  color: #415161;
   margin: 2vmax;
   padding-bottom: 0.5vmax;
   transition: all 0.5s;
@@ -29,11 +32,14 @@
   font: 300 0.9vmax "Roboto";
 }
 .productCard > div > p {
-  font-family: "Roboto";
-  font-size: 1.2vmax;
+  /* font-family: "Roboto"; */
+  font-family: "Teko", sans-serif;
+  font-size: 1.4vmax;
 }
 .productCard > div > span {
-  font: 500 1vmax "Roboto";
+  font-family: "Teko", sans-serif;
+  font-size: 1.3vmax;
+  color: #67727D;
 }
 .productCard:hover {
   box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);

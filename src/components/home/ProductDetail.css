@@ -1,41 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Teko:wght@600&display=swap');
+
 .product-detail {
   width: 100vw;
   max-width: 100%;
   padding: 2vmax;
   display: flex;
   flex-direction: row;
+  /* justify-content:flex-end; */
   /* background-color: rgb(210, 218, 226); */
+  /* border: 1px solid red; */
 }
 .left-column {
   flex: 1;
   width: 100%;
-  border: 1px solid #cc9b47;
+  /* border: 1px solid #67727D; */
   text-align: center;
   padding: 2vmax;
+  padding-right: 0vmax;
+  background-color: #f5f5f5;
 }
 .right-column {
   flex: 1;
   width: 100%;
   padding: 2vmax;
+  /* padding-left: 0vmax; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
   box-sizing: border-box;
-  border: 1px solid #cc9b47;
+  /* border: 1px solid #67727D; */
+  /* background-color: white; */
+
 }
 .carousel-image {
   width: 20vmax;
   max-width: 80%;
   height: 25vmax;
+  /* margin-right: 0px; */
 }
 
 .detail-block-1 > h2 {
-  color: rgb(54, 54, 54);
-  font: 600 1.6vmax "Roboto";
+  color: #415161;
+  /* font: 600 1.6vmax "Roboto"; */
+  font-size: 1.8vmax;
+  font-family: "Teko", sans-serif;
 }
 .detail-block-1 > p {
-  color: rgb(54, 54, 54, 0.582);
+  color: rgba(103, 114, 125,0.7);
   font: 200 1vmax "cursive";
 }
 
@@ -46,8 +59,10 @@
 }
 
 .detail-block-3 > h1 {
-  color: rgb(54, 54, 54);
-  font: 400 1.8vmax "Franklin Gothic Medium";
+  color: #67727D;
+  /* font: 400 1.8vmax "Franklin Gothic Medium"; */
+  font-size: 1.8vmax;
+  font-family: "Barlow", sans-serif;
   margin: 0.5vmax 0;
 }
 .detail-block-3-1 {
@@ -55,65 +70,76 @@
   align-items: center;
 }
 .detail-block-3-1-1 > button {
-  border: none;
-  background-color: #d7b16f;
+  border: 1px solid rgba(103, 114, 125,0.35);
+  background-color: white;
   padding: 0.5vmax;
   cursor: pointer;
-  color: white;
+  color: #67727D;
   transition: all 0.5s;
 }
 .detail-block-3-1-1 > button:hover {
-  background-color: #cc9b47;
+  background-color: rgba(245, 245, 245,0.5);
+  color: #415161;
 }
 .detail-block-3-1-1 > span {
   padding: 0.5vmax;
   text-align: center;
   font: 400 1vmax "Roboto";
   background: white;
-  color: rgba(0, 0, 0, 0.9);
+  color: #67727D;
+  /* border: 1px solid rgba(103, 114, 125,0.5); */
 }
 .detail-block-3-1 > button:last-child {
-  border: none;
+  border: 1px solid #415161;
   font: inherit;
   cursor: pointer;
   transition: all 0.5s;
-  color: white;
-  background-color: #d7b16f;
+  color: #67727D;
+  background-color: white;
   padding: 0.3vmax 1vmax;
   margin: 1vmax;
   border-radius: 5%;
+  font-size: 1.18vmax;
 }
 .detail-block-3-1 > button:last-child:hover {
-  background-color: #cc9b47;
+  background-color: rgba(245, 245, 245,0.5);
+  color: #415161;
 }
 .detail-block-3-1 > button:last-child:disabled {
   cursor: not-allowed;
   background-color: grey;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap');
 .detail-block-4 {
-  font: 500 1.2vmax sans-serif;
+  /* font: 500 1.2vmax sans-serif; */
+  font-size: 1.1vmax;
+  color: #515151;
+  /* font-family: "Teko", sans-serif; */
+  font-family: "Barlow", sans-serif;
 }
 .detail-block-4 > p {
-  color: rgb(94, 91, 91);
-  font: 300 1vmax sans-serif;
+  color: #67727D;
+  /* font: 300 1vmax sans-serif; */
+  font-size: 1vmax;
   padding-top: 0.2vmax;
+  font-family: "Barlow", sans-serif;
 }
 
 .submit-review {
-  border: none;
+  border: 1px solid #415161;
   font: inherit;
   cursor: pointer;
   transition: all 0.5s;
-  color: white;
-  background-color: #d7b16f;
+  color: #67727D;
+  background-color: white;
   padding: 0.3vmax 1vmax;
   margin: 1vmax 0;
   border-radius: 5%;
   outline: none;
 }
 .submit-review:hover {
-  background-color: #cc9b47;
+  background-color: rgba(245, 245, 245,0.5);
+  color: #415161;
 }
 
 .submit-dialog {
@@ -128,11 +154,13 @@
 }
 
 .reviews-heading {
-  color: rgb(53, 50, 50);
-  font: 500 2vmax "Roboto";
+  color: #515151;
+  /* font: 500 2vmax "Roboto"; */
+  font-size: 1.3vmax;
   text-align: center;
-  border-bottom: 1px solid black;
-  width: 20vmax;
+  font-family: "Barlow", sans-serif;
+  border-bottom: 1px solid #415161;
+  width: 8vmax;
   margin: auto;
   padding-top: 1vmax;
 }

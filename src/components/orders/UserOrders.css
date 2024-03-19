@@ -9,38 +9,40 @@
 }
 .orders-container > p {
   text-align: center;
-  font: 400 1.5vmax "Roboto";
-  background-color: #a1bceb;
-  color: black;
+  /* font: 400 1.5vmax "Roboto"; */
+  font-size: 1.2vmax;
+  background-color: #f5f5f5;
+  color: #415161;
   padding: 1vmax;
   transition: all 0.5s;
 }
 
 .orders-table > div {
-  font: 300 1.4vmax "Roboto";
-  color: rgba(0, 0, 0, 0.616);
+  /* font: 300 1.4vmax "Roboto"; */
+  font-size: 1.15vmax;
+  color: #67727D;
   /* border: none; */
 }
 .orders-table a {
-  color: rgba(0, 0, 0, 0.514);
+  color: #415161;
   transition: all 0.5s;
 }
 .orders-table a:hover {
-  color: #d9a64d;
+  color: #415161;
 }
 .MuiDataGrid-columnHeader {
-  background-color: #a1bceb;
+  background-color: #f5f5f5;
   padding: 1vmax !important;
 }
 .MuiDataGrid-columnHeader div {
-  color: black;
-  font-size: 1.5vmax;
+  color: #415161;
+  font-size: 1.3vmax;
 }
 .MuiDataGrid-iconSeparator {
   display: none !important;
 }
 .redColor {
-  color: #c38832 !important;
+  color: #415161 !important;
 }
 
 @media screen and (max-width: 600px) {

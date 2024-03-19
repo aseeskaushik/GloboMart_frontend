@@ -1,34 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Teko:wght@600&display=swap');
 .banner {
   /* background-image: linear-gradient(to right, #635dc0, #3027ae); */
-  /* background-image: url("../../images/background-1.jpg"); */
+  /* background-image: url("../../images/background.png"); */
   /* background: radial-gradient(circle,  red, #3027ae); */
   background-size: cover;
-  height: 100vmin;
+  height: 108vmin;
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  color: black;
+  color: #415161;
+  background-color: #ffffff;
+  margin-bottom: 0px;
 }
-.banner h1 {
-  margin: 5vmax;
-  font: 600 2.5vmax "Roboto";
+.banner2 {
+  height: 108vmin;
+  color: #415161;
 }
-.banner p {
-  font: 300 1.4vmax "Lucida sans";
+.banner1 {
+  /* background-image: linear-gradient(to right, #635dc0, #3027ae); */
+  /* background-image: url("../../images/background.png"); */
+  /* background: radial-gradient(circle,  red, #3027ae); */
+  /* background-size: cover; */
+  height: 108vmin;
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  align-items:flex-start;
+  justify-content:center;
+  color: #415161;
+  /* background-color: ; */
+  margin-left: 0.8vmax;
 }
-.banner a button {
+.banner1 h1 {
+  /* margin-bottom: 0vmax; */
+  font-family: "Teko", sans-serif;
+  font-size:  5vmax;
+  color: #415161;
+}
+.banner1 p {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.2vmax;
+  margin-bottom: 2.4vmax;
+  color: #67727D;
+}
+.banner1 a button {
   font: inherit;
   cursor: pointer;
   padding: 0.5rem 1.5rem;
   border-radius: 6px;
   background-color: transparent;
-  color: black;
+  color: #415161;
   border: 1px solid rgba(0, 0, 0, 0.473);
   transition: all 0.5s;
 }
-.banner a button:hover {
+.banner1 a button:hover {
   transform: scale(1.1);
 }
 /* .banner::after {
@@ -45,15 +73,24 @@
   background-image: url("../../images/background-1.jpg");
   background-size: cover;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Teko&display=swap');
 .home-heading {
-  font-family: Roboto;
-  font-size: 1.4vmax;
-  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  /* font-family: Roboto; */
+  font-family: "Teko", sans-serif;
+  font-size: 2.1vmax;
+  border-bottom: 1px solid #415161;
   width: 20vmax;
   text-align: center;
   margin: 5vmax auto;
+  margin-top: 0px;
+  color: #415161;
 }
-
+.low-banner{
+  background-color: #FFFFFF;
+  margin-bottom: -10vmax;
+  padding-bottom: 10vmax;
+  /* background-size: cover; */
+}
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -62,19 +99,40 @@
   justify-content: center;
   max-width: 100%;
 }
-
+@media screen and (max-width: 900px) {
+  .banner1 {
+    margin-left: 5vmax;
+  }
+}
+@media screen and (max-width: 770px) {
+  .banner2 img{
+    width: 0%;
+    height: 0%;
+  }
+}
 @media screen and (max-width: 600px) {
-  .banner h1 {
-    font: 600 3.5vmax "Roboto";
+  /* .banner1 {
+    margin-left: 1vmax;
+  } */
+  .banner1 h1 {
+    /* font: 600 3.5vmax "Roboto"; */
+    font-size: 3.5vmax;
+    color: #415161;
   }
-  .banner p {
-    font: 300 2.2vmax "Lucida sans";
+  .banner1 p {
+    /* font: 300 2.2vmax "Lucida sans"; */
+    font-size: 2.2vmax;
+    color: #879098;
   }
-  .banner a button {
+  .banner1 a button {
     font: inherit;
     font-size: 1.7vmax;
     padding: 0.3rem 1rem;
     border-radius: 4px;
+  }
+  .banner2 img{
+    width: 0%;
+    height: 0%;
   }
   .home-heading {
     font-size: 1.8vmax;

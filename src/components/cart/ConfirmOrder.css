@@ -29,7 +29,7 @@
   display: flex;
 }
 .confirmShipping-box > div > p {
-  color: black;
+  color: #415161;
   font: 400 1.3vmax "Roboto";
 }
 .confirmShipping-box > div > span {
@@ -78,7 +78,7 @@
   font-size: 2vmax;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: black;
+  color: #415161;
   border-bottom: 1px solid rgba(0, 0, 0, 0.712);
   text-align: center;
   padding: 1vmax;
@@ -119,16 +119,17 @@
 .orderSummary > button {
   padding: 1vmax;
   width: 100%;
-  background-color: #cc9b47;
+  background-color: #67727D;
   margin: auto;
-  border: none;
+  border: 1px solid #415161;
   color: white;
-  font: 400 1.5vmax "Roboto";
+  /* font: 400 1.5vmax "Roboto"; */
+  font-size: 1.1vmax;
   cursor: pointer;
   transition: all 0.5s;
 }
 .orderSummary > button:hover {
-  background-color: #af8131;
+  background-color: #415161;
 }
 
 @media screen and (max-width: 600px) {

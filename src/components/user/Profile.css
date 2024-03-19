@@ -11,12 +11,13 @@
   justify-content: center;
   align-items: center;
   max-width: 100%;
+  min-width: 50%;
+  /* min-height: 80%; */
+  padding: 3vmax;
 }
-/* .profile-container > div:first-child > h1 {
-  color: rgba(0, 0, 0, 0.568);
-  font: 500 2.2vmax "Roboto";
-  transform: translateX(-5vmax);
-} */
+.profile-container > div:first-child{
+  background-color: #f5f5f5;
+}
 .profile-container > div:first-child > img {
   width: 15vmax;
   height: 15vmax;
@@ -27,18 +28,20 @@
   transform: scale(1.05);
 }
 .profile-container > div:first-child > a {
-  border: none;
-  background-color: #D3A055;
+  border: 1px solid #415161;
   text-decoration: none;
   margin-top: 2vmax;
-  font: 400 1.2vmax "Roboto";
-  color: white;
+  /* font: 400 1.2vmax "Roboto"; */
+  background-color: white;
+  font-size: 1.2vmax;
+  color: #67727D;
   border-radius: 4px;
   padding: 0.5vmax 2vmax;
   transition: all 0.5s;
 }
 .profile-container >div:first-child >a:hover{
-    background-color: #C38832;
+    /* background-color: #415161; */
+    color: #415161;
 }
 
 .profile-container >div:last-child{
@@ -47,12 +50,15 @@
     gap: 1vmax;
 }
 .profile-container > div:last-child >div >h4{
-    color: black;
-    font: 400 1.2vmax "Roboto";
+    color: #415161;
+    /* font: 400 1.2vmax "Roboto"; */
+    font-size: 1.2vmax;
 }
 .profile-container > div:last-child >div >p{
-    color: rgb(0, 0, 0);
-    font: 300 1.6vmax "Roboto";
+    /* color: rgb(0, 0, 0); */
+    color: #67727D;
+    /* font: 300 1.6vmax "Roboto"; */
+    font-size: 1.6vmax;
     margin: 0.2vmax;
     /* color: #f3be1f; */
 }
@@ -63,18 +69,21 @@
     gap: 1vmax;
 }
 .profile-container >div:last-child >div:last-child > a{
-    border: none;
-    background-color: rgba(0, 0, 0, 0.849);
-    color: white;
+    border: 1px solid #415161;
+    /* background-color: rgba(0, 0, 0, 0.849); */
+    background-color: white;
+    font-size: 1.2vmax;
+    color: #67727D;
     text-decoration: none;
     padding: 0.5vmax 3vmax;
     text-align: center;
-    font: 400 1.2vmax "Roboto";
+    /* font: 400 1.2vmax "Roboto"; */
     transition: all 0.5s;
     border-radius: 2px;
 }
 .profile-container >div:last-child >div:last-child > a:hover{
-    background-color: black;
+    /* background-color: #415161; */
+    color: #415161;
 }
 
 @media screen and (max-width:600px) {

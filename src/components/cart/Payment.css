@@ -39,18 +39,19 @@
 .payment-form > button {
   padding: 1vmax;
   width: 100%;
-  background-color: #CC9B47;
-  font: 400 2vmax "Roboto";
+  background-color: #67727D;
+  /* font: 400 2vmax "Roboto"; */
+  font-size: 1.2vmax;
   color: white;
-  border: none;
+  border: 1px solid #415161;
   transition: all 0.5s;
   cursor: pointer;
 }
 .payment-form > button:hover {
-  background-color: #AF8131;
+  background-color: #415161;
 }
 .payment-form > button:disabled {
-  background-color: #CC5947;
+  background-color: gray;
   cursor: not-allowed;
 }
 

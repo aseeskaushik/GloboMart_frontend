@@ -55,17 +55,18 @@
 .shipping-form > button {
   padding: 1vmax;
   width: 100%;
-  background-color: #CC9B47;
+  background-color: #67727D;
   color: white;
-  border: none;
+  border: 1px solid #415161;
   border-radius: 4px;
-  font: 300 1.4vmax "Roboto";
+  /* font: 300 1.4vmax "Roboto"; */
+  font-size: 1.1vmax;
   cursor: pointer;
   margin-top: 2vmax;
   transition: all 0.5s;
 }
 .shipping-form > button:hover {
-  background-color: #AF8131;
+  background-color:#415161;
 }
 .shipping-form > button:disabled {
   background-color: grey;

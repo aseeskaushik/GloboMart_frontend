@@ -1,18 +1,19 @@
 .footer {
   margin-top: 10vmax;
   padding: 2vmax;
-  background-image: linear-gradient(to right, #1a1a1a, #000000);
+  /* background-image: linear-gradient(to right, #1a1a1a, #000000); */
+  background-color: #415161;
   color: white;
   display: flex;
   flex-direction: column;
   gap: 2vmax;
 }
-.footer > h1 {
+/* .footer > h1 {
   text-align: center;
   font-size: 4vmax;
-  color: #cc9b47;
+  color: #67727D;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
+} */
 .footer > div {
   display: flex;
   align-items: center;
@@ -67,7 +68,7 @@
   margin: 0.5vmax;
 }
 .right-footer a:hover {
-  color: #cc9b47;
+  color: #67727D;
 }
 
 @media screen and (max-width: 600px) {

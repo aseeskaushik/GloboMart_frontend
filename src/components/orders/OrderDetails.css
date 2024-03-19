@@ -4,11 +4,13 @@
   padding-bottom: 0;
 }
 .orderDetails-box > h1 {
-  font: 400 2vmax "Roboto";
+  /* font: 400 2vmax "Roboto"; */
+  font-size: 1.8vmax;
   margin-bottom: 1vmax;
 }
 .orderDetails-box > p {
-  font: 400 1.7vmax "Roboto";
+  /* font: 400 1.7vmax "Roboto"; */
+  font-size: 1.5vmax;
 }
 .orderDetails-box1 {
   /* margin: 3vmax; */
@@ -23,11 +25,13 @@
   display: flex;
 }
 .orderDetails-box1 > div > p {
-  font: 400 1.5vmax "Roboto";
+  /* font: 400 1.5vmax "Roboto"; */
+  font-size: 1.3vmax;
 }
 .orderDetails-box1 > div > span {
-  color: rgba(0, 0, 0, 0.705);
-  font: 400 1.5vmax "Roboto";
+  color: #67727D;
+  /* font: 400 1.5vmax "Roboto"; */
+  font-size: 1.3vmax;
   margin-left: 0.5vmax;
 }
 .orderDetails-cart {
@@ -35,7 +39,8 @@
   padding-top: 0;
 }
 .orderDetails-cart > p {
-  font: 400 1.7vmax "Roboto";
+  /* font: 400 1.7vmax "Roboto"; */
+  font-size: 1.3vmax;
 }
 .orderDetails-cart > div {
   padding: 1vmax;
@@ -53,17 +58,19 @@
   width: 4vmax;
 }
 .orderDetails-cart > div > div > a {
-  font: 300 1.5vmax "Roboto";
-  color: rgba(0, 0, 0, 0.9);
+  /* font: 300 1.5vmax "Roboto"; */
+  font-size: 1.3vmax;
+  color: #67727D;
   text-decoration: none;
 }
 .orderDetails-cart > div > div > a:hover{
-  color: #935A24;
+  color: #415161;
 }
 .orderDetails-cart > div > div > span {
   margin-left: auto;
-  font: 300 1.5vmax "Roboto";
-  color: rgba(0, 0, 0, 0.8);
+  /* font: 300 1.5vmax "Roboto"; */
+  font-size: 1.3vmax;
+  color: #67727D;
 }
 
 @media screen and (max-width: 600px) {

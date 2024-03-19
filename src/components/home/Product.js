@@ -5,12 +5,23 @@ import "./Product.css";
 const Product = (props) => {
   const options = {
     edit: false,
-    activeColor: "#CC9B47",
+    activeColor: "#67727D",
+    color: "#FFFFFF",
+    border: "1px solid #415161",
     size: window.innerWidth < 600 ? 15 : 20,
     value: props.product.rating,
     isHalf: true,
     emptyIcon: (
-      <i style={{ border: "1px solid white" }} className="far fa-star" />
+      <i
+        className="far fa-star"
+        style={{ backgroundColor: "#FFFFFF", border: "1px solid #415161" }}
+      />
+    ),
+    halfIcon: (
+      <i
+        className="fas fa-star-half-alt"
+        style={{ backgroundColor: "#FFFFFF", border: "1px solid #415161" }}
+      />
     ),
   };
   return (

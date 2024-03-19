@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Teko&display=swap');
 .productList-container {
   display: flex;
   flex-direction: column;
   gap: 2vmax;
   padding: 2vmax;
 }
-.productList-container > h1 {
-  background-color: black;
-  font: 400 1.7vmax "Roboto";
+.productList-container > p {
+  background-color: rgba(65, 81, 97,9);
+  /* font: 400 1.7vmax "Roboto"; */
+  font-size: 1.7vmax;
+  font-family: "Teko", sans-serif;
   color: white;
   padding: 1vmax;
   width: 15vmax;
@@ -18,8 +21,9 @@
   border: none !important;
 }
 .productList-table > div {
-  font: 200 1.5vmax "Roboto";
-  color: rgba(0, 0, 0, 0.904);
+  /* font: 200 1.5vmax "Roboto"; */
+  font-size: 1.3vmax;
+  color: #67727D;
   border: none !important;
 }
 .productList-table a {

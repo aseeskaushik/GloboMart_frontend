@@ -85,7 +85,7 @@ const UserOrders = () => {
             className="orders-table"
             autoHeight
           />
-          <Typography>{user.name}'s orders</Typography>
+          <Typography variant="body1">{user.name}'s orders</Typography>
         </div>
       )}
     </Fragment>

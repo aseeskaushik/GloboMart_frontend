@@ -47,7 +47,10 @@ const Profile = ({ user }) => {
 
   return (
     <Fragment>
-      <Backdrop open={open} style={{ zIndex: 10 }} />
+      <Backdrop
+        open={open}
+        style={{ zIndex: 10, backgroundColor: "rgba(0, 0, 0, 0.05)" }}
+      />
       <SpeedDial
         className="speed-dial"
         ariaLabel="SpeedDial tooltip example"

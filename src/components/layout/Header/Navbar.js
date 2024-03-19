@@ -54,7 +54,7 @@ const NavBar = () => {
             {cartItems.length > 0 && (
               <ShoppingCartCheckoutIcon
                 style={{
-                  color: "#A4782D",
+                  color: "#415161",
                   fontSize: window.innerWidth < 600 ? "3vmax" : "1.4vmax",
                 }}
               />

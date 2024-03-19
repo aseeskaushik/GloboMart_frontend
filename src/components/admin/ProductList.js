@@ -138,7 +138,7 @@ const ProductList = () => {
         <div className="dashboard">
           <Sidebar />
           <div className="productList-container">
-            <h1>All Products</h1>
+            <p>All Products</p>
             <DataGrid
               rows={rows}
               columns={columns}

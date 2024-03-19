@@ -11,15 +11,17 @@
 }
 .orderSuccess > svg {
   font-size: 5vmax;
-  color: #CC9B47;
+  color: #67727D;
 }
 .orderSuccess > p {
   font-size: 2vmax;
 }
 .orderSuccess > a {
-  background-color: #AF8131;
+  background-color:#67727D;
   color: white;
-  font: 300 1.5vmax "Roboto";
+  /* font: 300 1.5vmax "Roboto"; */
+  font-size: 1.5vmax;
+  border: 1px solid #415161;
   text-decoration: none;
   cursor: pointer;
   padding: 1vmax 3vmax;

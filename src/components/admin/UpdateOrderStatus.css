@@ -40,15 +40,15 @@
 .updateOrder-form > button {
   width: 100%;
   padding: 0.7vmax;
-  background-color: #925924;
-  border: 1px solid #925924;
+  background-color: #67727D;
+  border: 1px solid #415161;
   color: white;
   font: 300 1.4vmax "Roboto";
   cursor: pointer;
   transition: all 0.5s;
 }
 .updateOrder-form > button:hover {
-  background-color: #76481d;
+  background-color: #415161;
 }
 .updateOrder-form > button:disabled {
   border: none;

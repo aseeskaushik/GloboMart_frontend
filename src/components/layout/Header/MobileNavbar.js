@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 const MobileNavbar = ({ isOpen, toggleMenu }) => {
   const { cartItems } = useSelector((state) => state.cart);
-  
+
   return (
     <Fragment>
       <div
@@ -32,7 +32,7 @@ const MobileNavbar = ({ isOpen, toggleMenu }) => {
               {cartItems.length > 0 && (
                 <ShoppingCartCheckoutIcon
                   style={{
-                    color: "#CC9B47",
+                    color: "#67727D",
                     fontSize: window.innerWidth < 600 ? "3vmax" : "1.4vmax",
                   }}
                 />

@@ -4,12 +4,12 @@
   display: flex;
   flex-direction: column;
   gap: 1vmax;
-  background-color: #f8e5b1;
+  background-color: #F5F5F5;
   padding: 2vmax;
 }
 .newProduct-form > h1 {
   font: 400 1.7vmax "Roboto";
-  color: rgba(0, 0, 0, 0.9);
+  color:#415161;
   text-align: center;
   transition: all 0.5s;
 }
@@ -65,15 +65,15 @@
 .newProduct-form > button {
   width: 100%;
   padding: 0.8vmax;
-  background-color: #794a1e;
-  border: 1px solid #794a1e;
+  background-color: #67727D;
+  border: 1px solid #415161;
   color: white;
   font: 300 1.4vmax "Roboto";
   cursor: pointer;
   transition: all 0.5s;
 }
 .newProduct-form > button:hover {
-  background-color: #6a411a;
+  background-color: #415161;
 }
 .newProduct-form > button:disabled {
   background-color: grey;

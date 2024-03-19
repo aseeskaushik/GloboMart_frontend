@@ -42,13 +42,33 @@ const Cart = () => {
       {cartItems.length === 0 ? (
         <div className="empty-cart">
           <RemoveShoppingCartIcon />
-          <Typography>No product in your cart</Typography>
-          <Link to="/products">view products</Link>
+          <Typography variant="body1" style={{ color: "#67727D" }}>
+            No product in your cart
+          </Typography>
+          <Link
+            to="/products"
+            style={{
+              color: "#67727D",
+              backgroundColor: "white",
+              border: "1px solid #415161",
+              transition: "background-color 0.3s",
+              textDecoration: "none",
+              display: "inline-block",
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.color = "#415161";
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.color = "#67727D";
+            }}
+          >
+            View Products
+          </Link>
         </div>
       ) : (
         <div className="cart-page">
           <div className="cart-header">
-            <p>Product</p>
+            <p>Products</p>
             <p>Quantity</p>
             <p>Subtotal</p>
           </div>
@@ -82,7 +102,7 @@ const Cart = () => {
             </div>
             <div></div>
             <div className="checkout-button">
-              <button onClick={checkoutHandler}>Checkout</button>
+              <button onClick={checkoutHandler}>CHECKOUT</button>
             </div>
           </div>
         </div>

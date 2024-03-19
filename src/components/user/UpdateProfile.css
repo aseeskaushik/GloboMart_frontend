@@ -15,14 +15,17 @@
   border-radius: 4px;
 }
 .updateProfile-box > div > p {
-  color: #C38832;
+  color: #415161;
   /* background-color: rgba(0, 0, 0, 0.158); */
-  border-bottom: 2px solid #ca8928;
+  border-bottom: 2px solid #67727D;
   padding: 1vmax;
+  padding-bottom: 0.2vmax;
   border-radius: 4px 4px 0 0;
   text-align: center;
   width: 100%;
-  font: 100 1.5vmax "Roboto";
+  /* font: 100 1.5vmax "Roboto"; */
+  font-size: 1.6vmax;
+  font-family: "Teko", sans-serif;
   transition: all 0.5s;
 }
 
@@ -86,9 +89,11 @@
 .update-form > button {
   width: 100%;
   padding: 0.8vmax;
-  background-color: #D3A055;
+  background-color: #67727D;
   color: white;
-  font: 300 1.2vmax "Roboto";
+  /* font: 300 1.2vmax "Roboto"; */
+  font-size: 1.3vmax;
+  font-family: "Teko", sans-serif;
   border-radius: 4px;
   border: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.479);
@@ -97,8 +102,8 @@
   margin-top: 2vmax;
 }
 .update-form > button:hover {
-  background-color: #C38832;
-  color: black;
+  background-color: #415161;
+  /* color: #415161; */
 }
 
 @media screen and (max-width: 600px) {

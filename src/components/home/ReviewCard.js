@@ -7,7 +7,7 @@ const ReviewCard = (props) => {
   const options = {
     edit: false,
     color: "rgba(20,20,20,0.2)",
-    activeColor: "#CC9B47",
+    activeColor: "#67727D",
     size: window.innerWidth < 600 ? 25 : 20,
     value: props.review.rating,
     isHalf: true,
